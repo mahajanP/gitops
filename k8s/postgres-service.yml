@@ -1,15 +1,15 @@
-# headless service
-kind: Service
+#headles service for postgres
 apiVersion: v1
+kind: Service
 metadata:
   name: postgres
   namespace: devboard
 spec:
-  clusterIP: None
+  clusterIP: None 
   selector:
     app: devboard-postgres
   ports:
   - protocol: TCP
-    port: 5432 # service 
-    targetPort: 5432  # Pod port
-
+    port: 5432 # service ke leye
+    targetPort: 5432 # pod ka port
+      
