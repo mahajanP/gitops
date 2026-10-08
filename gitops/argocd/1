@@ -11,7 +11,7 @@ spec:
 
   source:
     repoURL: https://github.com/mahajanP/gitops.git
-    targetRevision: master
+    targetRevision: gitops
     path: k8s
 
   destination:
